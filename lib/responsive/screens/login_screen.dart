@@ -33,8 +33,8 @@ class _LoginScreenState extends State<LoginScreen> {
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               Flexible(
-                child: Container(),
                 flex: 2,
+                child: Container(),
               ),
               //svg image
               SvgPicture.asset(
@@ -79,30 +79,30 @@ class _LoginScreenState extends State<LoginScreen> {
                 ),
                 child: const Text('Log in'),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 12,
               ),
               Flexible(
-                child: Container(),
                 flex: 2,
+                child: Container(),
               ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Container(
-                    child: Text('Dont have an account'),
-                    padding: EdgeInsets.symmetric(vertical: 8),
+                    padding: const EdgeInsets.symmetric(vertical: 8),
+                    child: const Text('Dont have an account'),
                   ),
                   GestureDetector(
                     onTap: () {},
                     child: Container(
-                      child: Text(
+                      padding: const EdgeInsets.symmetric(vertical: 8),
+                      child: const Text(
                         'Sign up',
                         style: TextStyle(
                           fontWeight: FontWeight.bold,
                         ),
                       ),
-                      padding: EdgeInsets.symmetric(vertical: 8),
                     ),
                   ),
                 ],
