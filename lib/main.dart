@@ -1,6 +1,7 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
+import 'package:instagramclone/responsive/screens/login_screen.dart';
 import 'package:instagramclone/responsive/screens/signup_screen.dart';
 import 'package:instagramclone/utils/colors.dart';
 
@@ -32,7 +33,7 @@ class MyApp extends StatelessWidget {
       title: 'Instagram Clone',
       theme: ThemeData.dark()
           .copyWith(scaffoldBackgroundColor: mobileBackgroundColor),
-      home: const SignupScreen(),
+      home: const LoginScreen(),
       // ResponsiveLayout(
       //   mobileScreenLayout: MobileScreenLayout(),
       //   webScreenLayout: WebScreenLayout(),
