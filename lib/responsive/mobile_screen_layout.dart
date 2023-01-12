@@ -7,6 +7,8 @@ import 'package:instagramclone/utils/colors.dart';
 import 'package:provider/provider.dart';
 import 'package:instagramclone/models/user.dart' as model;
 
+import '../utils/global_variables.dart';
+
 class MobileScreenLayout extends StatefulWidget {
   const MobileScreenLayout({super.key});
 
@@ -52,20 +54,14 @@ class _MobileScreenLayoutState extends State<MobileScreenLayout> {
 
   @override
   Widget build(BuildContext context) {
-    // final model.User? user = Provider.of<UserProvider>(context).getUser;
+    // final model.User? user = Provid er.of<UserProvider>(context).getUser;
 
     return Scaffold(
       body: PageView(
         physics: const NeverScrollableScrollPhysics(),
-        children: [
-          Text('oio'),
-          Text('oio'),
-          Text('oio'),
-          Text('oio'),
-          Text('oiwwewadawdo'),
-        ],
         controller: pageController,
         onPageChanged: onPageChanged,
+        children: HomeScreenItems,
       ),
       bottomNavigationBar: CupertinoTabBar(
         backgroundColor: mobileBackgroundColor,
